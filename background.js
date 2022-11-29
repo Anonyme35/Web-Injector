@@ -547,11 +547,6 @@ let defaults = {
       "payload":"http://127.0.1"
    },
    {
-      "id":"124",
-      "parentId":"command-injection-linux",
-      "payload":"OS"
-   },
-   {
       "id":"125",
       "parentId":"command-injection-linux",
       "payload":"/index.html|id|"
