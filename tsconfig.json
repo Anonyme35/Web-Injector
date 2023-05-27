@@ -1,0 +1,11 @@
+{
+   "compilerOptions": {
+      "outDir": "dist",
+      "target": "ESNext",
+      "module": "ESNext",
+   },
+   "include": [
+      "src/**/*.ts",
+      "src/**/*.cjs"
+   ]
+}
