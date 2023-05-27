@@ -6,7 +6,7 @@
   "author": "Mystery",
   "background": {
     "scripts": [
-      "background.js"
+      "dist/main.js"
     ]
   },
   "permissions": [
